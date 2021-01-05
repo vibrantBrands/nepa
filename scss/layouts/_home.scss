@@ -1,0 +1,151 @@
+
+.page-template-homepage {
+	background: $dark-gray;
+
+	.nav {
+		display: none !important;
+	}
+
+	.emergency-message {
+			background: red;
+			color: $white;
+			margin-top: 20px;
+
+			p {
+				padding: 10px;
+			}
+		}
+	
+	.hero {
+		background: url("../img/hero2.png") $dark-gray;
+        background-size: cover;
+        background-position: bottom left;
+		margin-top: 80px;
+		height: 650px;
+		width: 100%;
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			margin-top: 130px;
+			height: 500px;
+		}
+
+		@media only screen and (max-width: $md-breakpoint) {
+			//margin-top: 10px;
+			height: 380px;
+		}
+
+		@media only screen and (max-width: $sm-breakpoint) {
+			height: 300px;
+			//margin-top: 100px;
+		}
+
+		&.one {
+			background: url("../img/hero1.png") $dark-gray;
+        	background-size: cover;
+        	background-position: bottom left;
+
+        	@media only screen and (max-width: $lg-breakpoint) {
+				background: url("../img/hero1_mobile.png") $dark-gray;
+				background-size: cover;
+				background-position: bottom left;
+			}
+		}
+		&.two {
+			background: url("../img/hero2.png") $dark-gray;
+        	background-size: cover;
+        	background-position: bottom left;
+
+        	@media only screen and (max-width: $lg-breakpoint) {
+				background: url("../img/hero2_mobile.png") $dark-gray;
+				background-size: cover;
+				background-position: bottom left;
+			}
+		}
+		&.three {
+			background: url("../img/hero3.png") $dark-gray;
+        	background-size: cover;
+        	background-position: bottom left;
+
+        	@media only screen and (max-width: $lg-breakpoint) {
+				background: url("../img/hero3_mobile.png") $dark-gray;
+				background-size: cover;
+				background-position: bottom left;
+			}
+		}
+		&.four {
+			background: url("../img/hero4.png") $dark-gray;
+        	background-size: cover;
+
+        	@media only screen and (max-width: $lg-breakpoint) {
+				background: url("../img/hero4_mobile.png") $dark-gray;
+				background-position: bottom left;
+				background-size: cover;
+			}
+		}
+		&.five {
+			background: url("../img/hero5.png");
+			background-position: bottom left;
+        	background-size: cover;
+
+        	@media only screen and (max-width: $lg-breakpoint) {
+				background: url("../img/hero5_mobile.png") $dark-gray;
+				background-position: bottom left;
+				background-size: cover;
+			}
+		}
+
+		.logo {
+			left: 50px;
+			top: 90px;
+			position: absolute;
+			z-index: 2;
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 300px;
+			}
+			@media only screen and (max-width: $md-breakpoint) {
+				left: 0px;
+				width: 280px;
+				margin: 10px 0 0 20px;
+			}	
+			@media only screen and (max-width: $sm-breakpoint) {
+				left: 0px;
+				width: 240px;
+				margin: 10px 0 0 20px;
+				top: 80px;
+			}	
+		}
+
+		.background { 
+			width: 100%;
+		}
+	}
+
+	.tagline {
+		background: $dark-gray;
+		color: $white;
+		font-family: $base-font;
+		font-size: 2em;
+		text-align: center;
+		padding: 20px 0;
+	}
+
+	.image-row {
+
+		a {
+			text-decoration: none;
+		}
+		>div {
+			width: 32%;
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 45%;
+			}
+
+			@media only screen and (max-width: $md-breakpoint) {
+				width: 60%;
+			}
+
+		}
+	}
+}

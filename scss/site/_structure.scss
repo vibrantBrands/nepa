@@ -1,0 +1,289 @@
+
+h1 {
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: 600;
+
+    @media only screen and (max-width: $sm-breakpoint) {
+        font-size: 28px;
+    }
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 500;
+    margin-bottom: 10px;
+
+	&.green {
+		color: $dark-green;
+	}
+}
+
+p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.fa-plus-square-o {
+    
+    &:before {
+        font-size: 24px;
+        content: ">";
+    }
+}
+
+.green {
+	color: $bright-green;
+}
+
+.purple {
+	color: $purple;
+
+	.fas {
+		color: $lite-purple;
+	}
+}
+
+.puce {
+	color: $puce;
+
+    .fas {
+        color: $lite-puce;
+    }
+}
+
+.blue {
+	color: $blue;
+
+    .fas {
+        color: $lite-blue;
+    }
+}
+
+.page-content {
+	padding-bottom: 60px;
+}
+
+.cta {
+	align-items: center;
+	background: $lite-gray;
+	border: 1px solid #D2D2D2;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 0;
+	flex-direction: column;
+	font-family: $base-font;
+	font-size: 26px;
+	margin: 30px 10px;
+	max-width: 300px;
+	padding: 20px 0px;
+	text-align: center;
+	text-decoration: none;
+
+    @media only screen and (max-width: $md-breakpoint) {
+        width: 90%;
+    }
+
+	&.mobile {
+
+		@media only screen and (min-width: $lg-breakpoint) {
+			display: none;
+		}
+	}
+
+	&.blue {
+
+        .fas, p {
+        	color: $blue;
+        }
+
+        &:hover {
+            background: $blue;
+            color: $white;
+        }
+    }
+    &.violet {
+
+        .fas, p {
+        	color: #dd82b5;
+        }
+    }
+    &.teal {
+
+        .fas, p {
+        	color: #51e7db;
+        }
+    }
+    &.orange {
+
+        .fas, p {
+        	color: #ffd478;
+        }
+    }
+    &.lt-green {
+
+        .fas, p {
+        	color: #66e59c;
+        }
+    }
+
+    &.puce {
+        color: $puce;
+
+        .fas {
+            color: $lite-puce;
+        }
+
+        p {
+            color: $puce;
+        }
+
+        &:hover {
+            background: $puce;
+            color: $white;
+        }
+    }
+    &.purple {
+
+        .fas, p {
+        	color: #8063ea;
+        }
+
+        &:hover {
+        	color: $white;
+        	background: $purple;
+        }
+    }
+
+	&.desktop {
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			display: none;
+		}
+	}
+
+	&:hover {
+		background: #16AD55;
+
+		.fas, p {
+			color: $white;
+
+			span {
+				color: $white;
+			}
+		}
+	}
+
+	i {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+
+	p {
+		color: $dark-green;
+		line-height: 1.2em;
+        //margin-left: 15px;
+		font-size: 27px;
+
+		span {
+			color: $bright-green;
+		}
+	}
+}
+
+.image-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        @media only screen and (max-width: $md-breakpoint) {
+            align-items: center;    
+        }
+
+        @include flex-col-layout($md-breakpoint);
+
+        >div {
+            margin: 5px;
+
+            @media only screen and (max-width: $md-breakpoint) {
+                width: 47%;
+            }
+            @media only screen and (max-width: $sm-breakpoint) {
+                font-size: .8em;
+                width: 45%;
+            }
+        }
+
+        h2 {
+            background: gray;
+            color: $white;
+            font-size: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 10px 0;
+
+            &.blue {
+                background: $blue;
+
+                .fas, p {
+                	color: $lite-blue;
+                }
+            }
+            &.violet {
+                background: $puce;
+
+                .fas, p {
+                	color: #dd82b5;
+                }
+            }
+            &.teal {
+                background: $teal;
+
+                .fas, p {
+                	color: #51e7db;
+                }
+            }
+            &.orange {
+                background: $orange;
+
+                .fas, p {
+                	color: #ffd478;
+                }
+            }
+            &.lt-green {
+                background: $bright-green;
+
+                .fas, p {
+                	color: #66e59c;
+                }
+            }
+            &.purple {
+                background: $purple;
+
+                .fas, p {
+                	color: #8063ea;
+                }
+            }
+        }
+    }
+
+ul {
+    font-size: 18px;
+    list-style-type: disc;
+    line-height: 24px;
+    padding-left: 20px;
+}
+
+.two-col {
+    display: flex;
+    justify-content: space-between;
+
+    >div {
+        text-align: left;
+    }
+}
+
+.logo {
+    @include hide-mobile();
+}

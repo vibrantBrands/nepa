@@ -1,0 +1,50 @@
+
+
+// Fonts
+$base-font: 'Oswald', sans-serif;
+$secondary-font: 'Prompt', sans-serif;
+$font-stack-system: $base-font;
+
+// Colors 
+
+$black: #000;
+$white: #fff;
+$dark-green: #046f3b;
+$lite-green: #66e59c;
+$bright-green: #13ad54;
+$dark-green: #046f3b;
+$blue: #1199cb;
+$lite-blue: #82dcfd;
+$puce: #985b7d;
+$lite-puce: #dd82b5;
+$teal: #13ada0;
+$orange: #ea9317;
+$purple: #3c2789;
+$lite-purple: #8063ea;
+$violet: #8063ea;
+$lite-gray: #f8f8f8;
+$dark-gray: #2c2c2c;
+
+// Menu 
+
+$menu-transition: all .5s ease-out;
+
+// Breakpoints
+
+$sm-breakpoint: 576px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 992px;
+$xl-breakpoint: 1200px;
+
+// Sizes 
+
+$content-max-width: 1200px;
+
+$topbar-height: 50px;
+$topbar-mobile-height: 90px;
+
+
+// Margins
+
+$header-top-margin: 70px;
+$h2-top-margin: 25px;
