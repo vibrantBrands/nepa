@@ -1,5 +1,5 @@
 # nepa
-Theme file for the new NEPA site 
+C5 theme file for the new NEPA site 
 
 ## SASS routine installation
 - run `npm install` in the theme folder to install node modules
